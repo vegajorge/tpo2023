@@ -1,0 +1,283 @@
+*{
+   margin: 0;
+   padding: 0;
+} 
+header {
+    padding: 1rem;
+    background-image: linear-gradient(to right, 
+    #47c714,
+    #22c50d,
+    #38cc25,
+    #17882f,
+    #159c4d,
+    #2c3331,
+    #525553,
+    #49504b
+  );
+}
+.barra-info{
+    background: linear-gradient(90deg, rgba(110, 199, 125, 0.942) 70%, rgba(126, 255, 156, 0.953) 97%);
+    display: flex;
+}
+.contenedor-izq{
+    display: inline-flex;
+    justify-content: flex-start;
+    padding: 0.7rem;
+    font-size: 0.7rem;
+    font-family: 'Titillium Web', sans-serif;
+    color: #064b2b;
+
+}
+.telefono{
+    margin-right: 1rem;
+}
+.material-symbols-outlined{
+    font-size: 11px !important;
+}
+.email a{
+    text-decoration: none;
+    color: #064b2b
+}
+
+.contenedor-der{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    list-style: none;
+    padding: 0.7rem;
+    margin-left: auto; 
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 2.5rem;
+
+}
+.contenedor-der img{
+    width: 20px;
+    height: 20px;
+    padding-left: 0.3rem;
+    filter: sepia(60%);
+
+}
+.contenedor-der img:hover {
+    filter: saturate(180%);
+    -webkit-transform:scale(1.3);
+    transform:scale(1.4);
+
+}
+
+
+nav{
+    background-image: url(../img/nav00.jpg);
+    padding: 1rem;
+
+}
+.barra-principal{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.barra-principal li a{ 
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 1rem;
+    font-family: 'Titillium Web', sans-serif;
+    color: #0c5036;
+    text-shadow: 10px 1px 3px rgb(247, 247, 247);
+}
+
+/*efecto botones barra*/
+.efecto-boton {
+    position: relative;
+    margin: auto;
+    padding: 15px 15px;
+    transition: all 0.2s ease;
+  }
+  .efecto-boton:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    border-radius: 22px;
+    background: rgba(5, 177, 82, 0.315);
+    width: 35px;
+    height: 35px;
+    transition: all 0.3s ease;
+  }
+  .efecto-boton span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+ .efecto-boton svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  .efecto-boton:hover:before {
+    width: 100%;
+    background: rgba(18, 99, 54, 0.5);
+  }
+  .efecto-boton:hover svg {
+    transform: translateX(0);
+  }
+  .efecto-boton:active {
+    transform: scale(0.96);
+  }
+
+
+
+body {
+    background-image: linear-gradient(to right, 
+    #96c21d,
+    #22c50d,
+    #38cc25,
+    #17882f,
+    #159c4d,
+    #2c3331,
+    #525553,
+    #49504b
+  );
+
+}
+main section {
+    padding: 1rem;
+    
+}
+
+/* efecto carrusel*/
+.carrousel span img{
+    width: 35px;
+    height: 35px;
+    background-color: #459753;
+    border-radius: 25px;
+}
+.carrousel span img:hover {
+    filter: saturate(280%);
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+.carrousel{
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.conteCarrousel{
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height:100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.itemCarrouselTarjeta img{
+    /*flex: 0 50% 100%;*/
+    width: 80%;
+    height: 60vh;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+
+
+footer{
+    padding: 1rem;
+    margin: 1rem;
+    background: linear-gradient(90deg, rgba(110, 199, 125, 0.942) 70%, rgba(126, 255, 156, 0.953) 97%);
+}
+footer p{
+    display: flex;
+    font-size: 0.7rem;
+    justify-content: center;
+    font-family: 'Titillium Web', sans-serif;
+    color: #064b2b;
+}
+
+@media only screen and (max-width: 580px) {
+    .contenedor-izq{
+        display:none;
+    }
+    .contenedor-der{
+        padding-right: 1rem;
+    }
+    .barra-principal li a{
+    font-size: 0.7rem;
+    margin: 0.7rem;
+    }
+    .efecto-boton {
+        padding: 4px 4px;
+    }
+    .carrousel span img{
+        width: 25px;
+        height: 25px;
+        border-radius: 15px;
+    }
+    .itemCarrouselTarjeta img{
+       object-fit: cover;
+       max-width: 100%;
+       height: auto;
+    }
+}
+@media only screen and (min-width: 580px) and (max-width:795px ) {
+    .barra-principal li a{
+        font-size: 1rem;
+        margin: 0.9rem;
+    }
+    .efecto-boton {
+        padding: 10px 10px;
+        
+}
+    .carrousel span img{
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+}
+.itemCarrouselTarjeta img {
+       /* object-fit: cover;  falta resolver responsive*/
+        /*width: auto;*/
+        /*max-width:fit-content;*/
+        height: 70%;
+}
+}

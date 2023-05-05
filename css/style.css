@@ -233,6 +233,9 @@ footer p{
     color: #064b2b;
 }
 @media only screen and (max-width: 417px) {
+    .efecto-boton:before {  
+        right: 2px;
+    }
     .efecto-boton:before {
         left: initial;
         display: inline;
@@ -262,9 +265,8 @@ footer p{
 
       .efecto-boton:before {
         left: initial;
-        /*display: inline;*/
+        display: inline;
         border-radius: 22px;
-        
         width: 15px;
         height: 15px;
         

@@ -1,0 +1,99 @@
+.contenido{
+    display: inline-block;
+    background-color: #d6f5e6;
+    border: 1px solid #67c495;
+    padding: 1rem;
+    margin: 1rem;
+    font-family: 'Titillium Web', sans-serif;
+    color: #064b2b;
+ }
+h2{
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding: 1rem;
+   -webkit-text-stroke: 0.5px #155837;
+}
+
+p{
+    padding-left: 1rem;
+}
+article li{
+    list-style: none;
+    
+}
+#imagenCheck{
+    width: 20px;
+    height: 20px;
+    padding: 5px 5px 2px;
+}
+#flecha {
+    width: 40px;
+    position: fixed;
+    bottom: 3vh;
+    right: 5vh;
+
+}
+#flecha:hover {
+    filter: saturate(180%);
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+}
+
+
+/*efecto carrusel */
+.carrusel {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+  .carrusel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 1030px;
+    /* max-width: 510px; */
+    scroll-behavior: smooth;
+  }
+  
+  .carrusel-fotos {
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+  }
+  
+  .carrusel-fotos img {
+    background: rgb(111, 160, 123);
+    border: 4px solid rgba(255, 255, 255, 0.932);
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+  }
+  
+  .carrusel-menu {
+    display: none;
+  }
+  @media screen and (min-width: 500px) {
+    .carrusel-fotos {
+      overflow: hidden;
+    }
+  
+    .carrusel-fotos img {
+      width: 500px;
+      height: 400px;
+    }
+    .carrusel-menu {
+      display: block;
+    }
+    .carrusel-menu img {
+      box-sizing: border-box;
+      width: 60px;
+      height: 50px;
+      border: 10px solid black;
+    }
+    .carrusel-menu img:hover {
+      border: none;
+    }
+  }

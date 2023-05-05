@@ -4,9 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="comision 23029 grupo 1">
+    <meta name="description" content="Proyecto Desarrollo Web HTML, CSS y Javascript">
+    <meta name="keywords" content="alimentacion, nutricion, deporte, saludable">
+    <meta property="og:title" content="TPO Desarrollo Web" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content=" http://" />
+    <meta property="og:image" content="https://" />
+    <meta property="og:description" content="Un entrenamiento acompañado de una adecuada alimentación podrá alcanzar mayores intensidades de trabajo y duración del mismo, de la misma manera que en periodos de descanso se debe adaptar también la alimentación y así favorecer la supercompensación y adaptación al deporte" />
+    <link rel="icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contacto.css">
     <title>Formulario de contacto</title>
 </head>
 <body>
-    
+    <header>
+        <div class="barra-info">
+            <div class="contenedor-izq">
+               <div class="telefono"><span class="material-symbols-outlined">phone_in_talk</span> <spam>351-000001</spam></div>
+               <div class="email"><span class="material-symbols-outlined">mail</span> <a href="mailto:nutriconsaludable@nutricion.com">nutricionsaludable@nutricion.com</a></div>
+            </div>
+            <ul class="contenedor-der">
+                 <li class="redfacebook"><a target="_blank" href="https://www.facebook.com/" ><img class="facebook" src="../img/facebook.png" alt="foto facebook"></a></li>
+                 <li class="redinstagram"><a target="_blank" href="https://www.instagram.com/" ><img class="instagram" src="../img/instagram.png" alt="foto instagram"></a></li>
+                  <li class="redtwitter"><a target="_blank" href="https://twitter.com/" ><img class="twitter" src="../img/twiter.png" alt="foto twitter"></a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="barra-principal">
+                <li><a class="efecto-boton" href="../index.html"><sapn>Inicio</sapn></a></li>
+                <li><a class="efecto-boton" href="articulo.html">Nutricion</a></li>
+                <li><a class="efecto-boton" href="servicios.html">Servicios</a></li>
+                <li><a class="efecto-boton" href="ventas.html">Ventas</a></li>
+                <li><a class="efecto-boton" href="contacto.html">Contacto</a></li>
+            <ul>
+        </nav>
+    </header>
+    <main class="contenedor dos-columnas">
+      <article class="contenedor">
+        <h2>Local</h2>
+        <div><span><img class="contacto" src="/img/ubicacion.png" alt="imagen ubicacion">San Martin 123 Barrio Centro - Cordoba Capital</span></div>
+        <div><span><img class="contacto" src="/img/telefonoContacto.png" alt="imagen telefono">351-000001</span> <span><a href="mailto:nutriconsaludable@nutricion.com"><img class="contacto" src="/img/emailContacto.png" alt="imagen email"> nutricionsaludable@nutricion.com </a> </span></div>
+        <div class="ubicacion">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d54484.781398386185!2d-64.22674760024786!3d-31.40589163447545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1snutricion!5e0!3m2!1ses!2sar!4v1682455953110!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </article>
+      <article class="contenedor">
+        <h2>Contacto</h2>
+       <form>
+        <fieldset>
+          <br>
+          <legend>Datos Personales</legend>
+          <label for="nombre">Nombre: </label>
+          <input size="30" type="text" name="nombre" placeholder="Ingrese su nombre" required>
+          <br><br>
+          <label for="apellido">Apellido:</label>
+          <input size="30" type="text" name="apellido" placeholder="Ingrese su apellido">
+          <br><br>
+          <label for="domicilio">Direccion:</label>
+          <input type="text" name="comicilio" placeholder="Ingrese su dirección">
+           <br><br>
+           <label for="telefono">Telefono: </label>
+          <input type="tel" name="telefono" placeholder="Ingrese su telefono">
+          <br><br>
+          <label for="fecha">Fecha Nac.: </label>
+          <input type="date" name="fecha">
+          <br><br>
+          <p class="genero">Genero &nbsp &nbsp
+              <input type="radio" name="gender" value="hombre" checked="">Hombre
+              <input type="radio" name="gender" value="Mujer">Mujer
+              <input type="radio" name="gender" value="Otro"> Otro
+          </p>
+          <br>
+          <label for="email">Email: </label>
+          <input size="30" type="email" name="email" placeholder="Ingrese su email" required>
+          <br><br>
+          <label for="consulta">Consulta:</label>
+          <textarea name="consulta" rows="5" cols="30" placeholder="Ingrese su consulta" required></textarea>
+        <br><br>
+
+      </fieldset>
+     <div id="botones"><button type="submit" value="Enviar">Enviar</button>
+      <button type="reset">Borrar</button>
+    </div> 
+     </form>
+      </article>
+    </main>
+    <footer>
+        <div><p>Copyright © Argentina 2023</p></div>
+    </footer>
 </body>
 </html>

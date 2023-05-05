@@ -257,23 +257,16 @@ footer p{
         
       }
       .efecto-boton span {
-        position: relative;
         font-size: 16px;
         line-height: 18px;
-        font-weight: 900;
-        letter-spacing: 0.25em;
+        font-weight: 400;
+   
       }
      .efecto-boton svg {
         position: relative;
-        top: 0;
+        top: 10px;
         margin-left: 10px;
-        fill: none;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke: #00af00;
-        stroke-width: 2;
-        transform: translateX(-5px);
-        transition: all 0.3s ease;
+
      }
 
 
@@ -283,9 +276,9 @@ footer p{
         border-radius: 15px;
     }
     .itemCarrouselTarjeta img{
-       object-fit: cover;
+       object-fit: none;
        max-width: 100%;
-       height: auto;
+       height: inherit;
     }
 }
 @media only screen and (min-width: 580px) and (max-width:795px ) {

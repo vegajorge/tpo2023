@@ -232,6 +232,18 @@ footer p{
     font-family: 'Titillium Web', sans-serif;
     color: #064b2b;
 }
+@media only screen and (max-width: 417px) {
+    .efecto-boton:before {
+        left: initial;
+        display: inline;
+        border-radius: 22px;
+        top: 25px;
+        width: 15px;
+        height: 15px;
+
+}
+}
+
 
 @media only screen and (max-width: 580px) {
     .contenedor-izq{
@@ -250,9 +262,10 @@ footer p{
 
       .efecto-boton:before {
         left: initial;
-        display: inline;
+        /*display: inline;*/
         border-radius: 22px;
-         width: 15px;
+        
+        width: 15px;
         height: 15px;
         
       }
@@ -264,11 +277,10 @@ footer p{
       }
      .efecto-boton svg {
         position: relative;
-        top: 10px;
+        top: 20px;
         margin-left: 10px;
 
      }
-
 
     .carrousel span img{
         width: 25px;
@@ -281,6 +293,7 @@ footer p{
        height: inherit;
     }
 }
+
 @media only screen and (min-width: 580px) and (max-width:795px ) {
     .barra-principal li a{
         font-size: 1rem;
@@ -296,9 +309,6 @@ footer p{
         border-radius: 20px;
     }
     .itemCarrouselTarjeta img {
-       /* object-fit: cover;  falta resolver responsive*/
-        /*width: auto;*/
-        /*max-width:fit-content;*/
         height: 70%;
 }
 }

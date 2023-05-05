@@ -247,6 +247,36 @@ footer p{
     .efecto-boton {
         padding: 4px 4px;
     }
+
+      .efecto-boton:before {
+        left: initial;
+        display: inline;
+        border-radius: 22px;
+         width: 15px;
+        height: 15px;
+        
+      }
+      .efecto-boton span {
+        position: relative;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 900;
+        letter-spacing: 0.25em;
+      }
+     .efecto-boton svg {
+        position: relative;
+        top: 0;
+        margin-left: 10px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke: #00af00;
+        stroke-width: 2;
+        transform: translateX(-5px);
+        transition: all 0.3s ease;
+     }
+
+
     .carrousel span img{
         width: 25px;
         height: 25px;
@@ -265,14 +295,14 @@ footer p{
     }
     .efecto-boton {
         padding: 10px 10px;
-        
-}
+    }  
+      
     .carrousel span img{
         width: 30px;
         height: 30px;
         border-radius: 20px;
-}
-.itemCarrouselTarjeta img {
+    }
+    .itemCarrouselTarjeta img {
        /* object-fit: cover;  falta resolver responsive*/
         /*width: auto;*/
         /*max-width:fit-content;*/

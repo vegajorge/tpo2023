@@ -232,7 +232,18 @@ footer p{
     font-family: 'Titillium Web', sans-serif;
     color: #064b2b;
 }
-@media only screen and (max-width: 417px) {
+/*@media only screen and (max-width: 400px) {
+    .efecto-boton:before {  
+        display: none;
+
+    }
+    .efecto-boton:before {
+        display: none;
+
+    }
+
+}*/
+@media only screen and (max-width: 455px) {
     main section{
         padding: 0.5rem;
     }
@@ -260,7 +271,7 @@ footer p{
 }
 
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 599px) {
     .contenedor-izq{
         display:none;
     }
@@ -307,7 +318,7 @@ footer p{
     }
 }
 
-@media only screen and (min-width: 580px) and (max-width:795px ) {
+@media only screen and (min-width: 599px) and (max-width:795px ) {
     .barra-principal li a{
         font-size: 1rem;
         margin: 0.9rem;

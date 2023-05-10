@@ -51,49 +51,106 @@
         <div><span><img class="contacto" src="../img/telefonoContacto.png" alt="imagen telefono">351-000001</span> <span><a href="mailto:nutriconsaludable@nutricion.com"><img class="contacto" src="../img/emailContacto.png" alt="imagen email"> nutricionsaludable@nutricion.com </a> </span></div>
         <div class="ubicacion">
           <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d54484.781398386185!2d-64.22674760024786!3d-31.40589163447545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1snutricion!5e0!3m2!1ses!2sar!4v1682455953110!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </article>
+        </article>
       <article class="contenedor">
         <h2>Contacto</h2>
-       <form>
+       <form action="" class="formulario" id="formulario" method="post">
+        
         <fieldset>
           <br>
           <legend>Datos Personales</legend>
+          <div class="formulario__grupo" id="grupo__nombre">
           <label for="nombre">Nombre: </label>
-          <input size="30" type="text" name="nombre" placeholder="Ingrese su nombre" required>
-          <br><br>
-          <label for="apellido">Apellido:</label>
-          <input size="30" type="text" name="apellido" placeholder="Ingrese su apellido">
-          <br><br>
-          <label for="domicilio">Direccion:</label>
-          <input type="text" name="comicilio" placeholder="Ingrese su dirección">
-           <br><br>
-           <label for="telefono">Telefono: </label>
-          <input type="tel" name="telefono" placeholder="Ingrese su telefono">
-          <br><br>
-          <label for="fecha">Fecha Nac.: </label>
-          <input type="date" name="fecha">
-          <br><br>
-          <p class="genero">Genero &nbsp &nbsp
-              <input type="radio" name="gender" value="hombre" checked="">Hombre
-              <input type="radio" name="gender" value="Mujer">Mujer
-              <input type="radio" name="gender" value="Otro"> Otro
-          </p>
+          <span class="formulario__grupo-input">
+          <input size="30" class="formulario__input" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+          </span>
+          <p class="formulario__input-error">El nombre solo puede contener letras. </p>
+        </div>
           <br>
-          <label for="email">Email: </label>
-          <input size="30" type="email" name="email" placeholder="Ingrese su email" required>
-          <br><br>
-          <label for="consulta">Consulta:</label>
-          <textarea name="consulta" rows="5" cols="30" placeholder="Ingrese su consulta" required></textarea>
-        <br><br>
+          <div class="formulario__grupo" id="grupo__apellido">
+          <label for="apellido">Apellido:</label>
+          <span class="formulario__grupo-input">
+          <input size="30" class="formulario__input" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+           </span>
+           <p class="formulario__input-error">El apellido solo puede contener letras. </p>
+           </div>
+         <br>
+         <div class="formulario__grupo" id="grupo__domicilio">
+          <label for="domicilio">Domicilio:</label>
+          <span class="formulario__grupo-input">
+          <input class="formulario__input" type="text" name="domicilio" id="domicilio" placeholder="Ingrese su dirección">
+          </span>
+           <p class="formulario__input-error">El domicilio puede contener letras y numeros. </p>
+          </div>
+           <br>
 
+           <div class="formulario__grupo" id="grupo__telefono">
+          <label for="telefono">Telefono: </label>
+          <span class="formulario__grupo-input">
+          <input type="tel" class="formulario__input" name="telefono" id="telefono" placeholder="Ingrese su telefono">
+         </span>
+         <p class="formulario__input-error">El telefono solo puede contener numeros. </p>
+        </div>
+          <br>
+
+          <div class="formulario__grupo" id="grupo__fecha">
+          <label for="fecha">Fecha Nac.: </label>
+          <span class="formulario__grupo-input">
+          <input type="date" class="formulario__input" name="fecha" id="fecha">
+        </span>
+        <p class="formulario__input-error">Seleccione una fecha valida. </p>
+        </div>
+          <br>
+
+          <div class="formulario__grupo" id="grupo__genero">
+          <p class="genero">Genero &nbsp &nbsp
+              <input type="radio"  class="formulario__input"name="genero" id="genero_Hombre" value="hombre" checked="">Hombre
+              <input type="radio" class="formulario__input" name="genero"id="genero_Mujer" value="Mujer">Mujer
+              <input type="radio" class="formulario__input" name="genero" id="genero_Otro"value="Otro"> Otro
+          </p>
+          <p class="formulario__input-error">Seleccione Uno. </p>
+          </div>
+          <br>
+          <div class="formulario__grupo" id="grupo__email">
+          <label for="email">Email: </label>
+          <span class="formulario__grupo-input">
+          <input size="30" type="email" class="formulario__input" name="email" id="email" placeholder="Ingrese su email" required>
+          </span>
+          <p class="formulario__input-error">Ingrese un email valido. </p>
+         </div>
+          <br>
+          <div class="formulario__grupo" id="grupo__consulta">
+          <label for="consulta"> Consulta: </label>
+          <span class="formulario__grupo-input">
+          <input name="consulta" size="30" class="formulario__input" id="consulta"  placeholder="Ingrese su consulta" required></textarea>
+        </span>
+        <p class="formulario__input-error">Debe ingresar una consulta. </p>
+        </div>
+          <br><br>
+          <div class="formulario__grupo" id="grupo__terminos">
+            <label class="formulario__label">
+              <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+              Acepto los Terminos y Condiciones
+            </label>
+          </div>
       </fieldset>
-     <div id="botones"><button type="submit" value="Enviar">Enviar</button>
-      <button type="reset">Borrar</button>
-    </div> 
+       <div class="formulario__grupo formulario__grupo-btn-enviar">
+       <div id="botones"><button class="formulario__btn" type="submit" value="Enviar">Enviar</button>
+  	    <button type="reset">Borrar</button>	
+      </div>
+
+    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+      </div>
+      <div class="formulario__mensaje" id="formulario__mensaje">
+				<p><b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
      </form>
       </article>
     </main>
     <a href="#ancla"><img id="flecha" src="../img/flecha-arriba.png" alt="Arriba"></a>
+
+    <script src="../js/javascript.js"></script>
+   <script src="../js/envio.js"></script>
     <footer>
         <div><p>Copyright © Argentina 2023</p></div>
     </footer>

@@ -19,6 +19,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/contacto.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript"> (function(){emailjs.init("LiX-a_9nTopnfow4y");})();</script>
+    <script src="../js/envio.js"></script>
     <title>Formulario de contacto</title>
 </head>
 <body>
@@ -54,9 +57,8 @@
         </article>
       <article class="contenedor">
         <h2>Contacto</h2>
-       <form action="" class="formulario" id="formulario" method="post">
-        
-        <fieldset>
+       <form action="" method="post" target="_blank" class="formulario" id="formulario" >
+          <fieldset>
           <br>
           <legend>Datos Personales</legend>
           <div class="formulario__grupo" id="grupo__nombre">
@@ -102,7 +104,7 @@
         </div>
           <br>
 
-          <div class="formulario__grupo" id="grupo__genero">
+         <!-- <div class="formulario__grupo" id="grupo__genero">
           <p class="genero">Genero &nbsp &nbsp
               <input type="radio"  class="formulario__input"name="genero" id="genero_Hombre" value="hombre" checked="">Hombre
               <input type="radio" class="formulario__input" name="genero"id="genero_Mujer" value="Mujer">Mujer
@@ -110,7 +112,7 @@
           </p>
           <p class="formulario__input-error">Seleccione Uno. </p>
           </div>
-          <br>
+          <br>>-->
           <div class="formulario__grupo" id="grupo__email">
           <label for="email">Email: </label>
           <span class="formulario__grupo-input">
@@ -135,23 +137,16 @@
           </div>
       </fieldset>
        <div class="formulario__grupo formulario__grupo-btn-enviar">
-       <div id="botones"><button class="formulario__btn" type="submit" value="Enviar">Enviar</button>
+       <div id="botones"><button class="formulario__btn" type="submit" value="Enviar" onclick="enviaMail()">Enviar</button>
   	    <button type="reset">Borrar</button>	
-      </div>
-
-    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
-      </div>
-      <div class="formulario__mensaje" id="formulario__mensaje">
-				<p><b>Error:</b> Por favor rellena el formulario correctamente. </p>
-			</div>
+      </div> <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p></div>
+      <div class="formulario__mensaje" id="formulario__mensaje"><p><b>Error:</b> Por favor rellena el formulario correctamente. </p></div>
      </form>
       </article>
     </main>
     <a href="#ancla"><img id="flecha" src="../img/flecha-arriba.png" alt="Arriba"></a>
-
     <script src="../js/javascript.js"></script>
-   <script src="../js/envio.js"></script>
-    <footer>
+     <footer>
         <div><p>Copyright © Argentina 2023</p></div>
     </footer>
 </body>

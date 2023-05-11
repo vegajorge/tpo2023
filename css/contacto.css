@@ -41,7 +41,14 @@ label {
 
  fieldset{
     padding-right: 0.5rem;
-    /*display: flexbox;*/
+    
+ }
+ .formulario__input{
+    margin-left: 0.5rem;
+    width: 70%;
+	height: 20px;
+	line-height: 20px;
+	
  }
 
  #botones{
@@ -145,8 +152,11 @@ label {
 }
 
 .formulario__mensaje-exito {
-	font-size: 14px;
+	margin-top: 1rem;
+    font-size: 14px;
 	color: #119200;
+    background: #60f6d148;
+    border-radius: 3px;
 	display: none;
 }
 

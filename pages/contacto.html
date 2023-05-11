@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="../css/contacto.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript"> (function(){emailjs.init("LiX-a_9nTopnfow4y");})();</script>
-    <script src="../js/envio.js"></script>
+    <script src="../js/envioEmail.js"></script>
     <title>Formulario de contacto</title>
 </head>
 <body>
@@ -39,6 +39,7 @@
         </div>
         <nav>
             <ul class="barra-principal">
+                <li><img id="foto-logo-barra"src="../img/logobarra1.png" alt="imagen logo barra"></li>
                 <li><a class="efecto-boton" href="../index.html"><sapn>Inicio</sapn></a></li>
                 <li><a class="efecto-boton" href="articulo.html">Nutricion</a></li>
                 <li><a class="efecto-boton" href="servicios.html">Servicios</a></li>
@@ -95,14 +96,14 @@
         </div>
           <br>
 
-          <div class="formulario__grupo" id="grupo__fecha">
+         <!--   <div class="formulario__grupo" id="grupo__fecha">
           <label for="fecha">Fecha Nac.: </label>
           <span class="formulario__grupo-input">
           <input type="date" class="formulario__input" name="fecha" id="fecha">
         </span>
         <p class="formulario__input-error">Seleccione una fecha valida. </p>
         </div>
-          <br>
+          <br>-->
 
          <!-- <div class="formulario__grupo" id="grupo__genero">
           <p class="genero">Genero &nbsp &nbsp
@@ -124,17 +125,18 @@
           <div class="formulario__grupo" id="grupo__consulta">
           <label for="consulta"> Consulta: </label>
           <span class="formulario__grupo-input">
-          <input name="consulta" size="30" class="formulario__input" id="consulta"  placeholder="Ingrese su consulta" required></textarea>
+          <input name="consulta" class="formulario__input" id="consulta" size="50" placeholder="Ingrese su consulta" >
         </span>
-        <p class="formulario__input-error">Debe ingresar una consulta. </p>
+        <p class="formulario__input-error">Debe ingresar una consulta maximo 250 caracteres. </p>
         </div>
-          <br><br>
+          <br>
           <div class="formulario__grupo" id="grupo__terminos">
             <label class="formulario__label">
               <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
               Acepto los Terminos y Condiciones
             </label>
           </div>
+          <br>
       </fieldset>
        <div class="formulario__grupo formulario__grupo-btn-enviar">
        <div id="botones"><button class="formulario__btn" type="submit" value="Enviar" onclick="enviaMail()">Enviar</button>
@@ -145,7 +147,7 @@
       </article>
     </main>
     <a href="#ancla"><img id="flecha" src="../img/flecha-arriba.png" alt="Arriba"></a>
-    <script src="../js/javascript.js"></script>
+    <script src="../js/validarFormulario.js"></script>
      <footer>
         <div><p>Copyright © Argentina 2023</p></div>
     </footer>

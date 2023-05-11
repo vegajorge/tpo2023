@@ -4,7 +4,6 @@ function enviaMail() {
     apellido: document.getElementById('apellido').value,
     domicilio: document.getElementById('domicilio').value,
     telefono: document.getElementById('telefono').value,
-    fecha: document.getElementById('fecha').value,
     email: document.getElementById('email').value,
     consulta: document.getElementById('consulta').value,
  };
@@ -18,7 +17,6 @@ function enviaMail() {
         document.getElementById("apellido").value = "";
         document.getElementById("domicilio").value = "";
         document.getElementById("telefono").value = "";
-        document.getElementById("fecha").value = "";
         document.getElementById("email").value = "";
         document.getElementById("consulta").value = "";
         console.log(res);

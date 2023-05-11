@@ -62,15 +62,22 @@ header {
     -webkit-transform:scale(1.3);
     transform:scale(1.7);
     padding-left: 0.7rem;
-
 }
-
 
 nav{
     background-image: url(../img/nav00.jpg);
     padding: 1rem;
 
 }
+#foto-logo-barra{
+    width: 12vh;
+    height: auto;
+    position: absolute;
+    top: 45px;
+    left: 22px;
+    filter: saturate(180%);
+}
+
 .barra-principal{
     list-style: none;
     display: flex;
@@ -268,6 +275,13 @@ footer p{
     .barra-principal li a{
     font-size: 0.8rem;
     margin: 0.7rem;
+    }
+
+    #foto-logo-barra{
+        top:22px;
+        left: 23px;
+        width: 9vh;
+          
     }
     .efecto-boton {
         padding: 4px 4px;

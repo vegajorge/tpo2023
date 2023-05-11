@@ -7,7 +7,7 @@ const expresiones = {
     domicilio: /^[a-zA-Z0-9\s]{1,30}$/,
     telefono: /^\d{7,14}$/, 
 	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	consulta: /^[a-zA-ZÀ-ÿ\s]{1,60}$/,
+	consulta: /^[a-zA-Z0-9\-._~!$&'()*+,;=:@/[\]]{1,250}$/,
 }
 
 const campos = {

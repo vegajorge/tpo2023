@@ -18,11 +18,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/ventas.css">
-    <title>Ventas</title>
+    <link rel="stylesheet" href="../css/recetas.css">
+    <title>Recetas</title>
 </head>
 <body>
-    <header>
+    <header id="ancla">
         <div class="barra-info">
             <div class="contenedor-izq">
                <div class="telefono"><span class="material-symbols-outlined">phone_in_talk</span> <spam>351-000001</spam></div>
@@ -34,23 +34,29 @@
                   <li class="redtwitter"><a target="_blank" href="https://twitter.com/" ><img class="twitter" src="../img/twiter.png" alt="foto twitter"></a></li>
             </ul>
         </div>
-
         <nav>
             <ul class="barra-principal">
                 <li><img id="foto-logo-barra"src="../img/logobarra1.png" alt="imagen logo barra"></li>
                 <li><a class="efecto-boton" href="../index.html"><sapn>Inicio</sapn></a></li>
                 <li><a class="efecto-boton" href="articulo.html">Nutricion</a></li>
                 <li><a class="efecto-boton" href="servicios.html">Servicios</a></li>
-                <li><a class="efecto-boton" href="ventas.html">Ventas</a></li>
+                <li><a class="efecto-boton" href="recetas.html">Recetas</a></li>
                 <li><a class="efecto-boton" href="contacto.html">Contacto</a></li>
             <ul>
         </nav>
     </header>
     <main>
-
+        <div class="container">
+            <div class="search-container"><input type="text" placeholder="Ingrese la busqueda"  id="user-inp" autofocus="autofocus"/>
+              <button id="search-btn">Buscar</button>
+              <div><span class="aclaracion">Ingrese palabras en ingles ejemplo milk, meat, cheese,beef..</spam></div>
+            </div>
+            <div id="result" translate="yes"></div>
+        </div>
+        <a href="#ancla"><img id="flecha" src="../img/flecha-arriba.png" alt="Arriba"></a> 
     </main>
-
-    <footer>
+    <script src="../js/consumirApi.js"></script>
+        <footer>
         <div><p>Copyright © Argentina 2023</p></div>
     </footer>
 </body>

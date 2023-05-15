@@ -1,0 +1,110 @@
+.aclaracion{
+  font-size: 0.7rem;
+
+}
+.container {
+  background-color: #d6f5e6;
+  border: 1px solid #67c495;
+  padding: 1rem;
+  margin: 1rem;
+  font-family: 'Titillium Web', sans-serif;
+  color: #000000;
+  
+  }
+  .search-container {
+    width: 100%;
+    /*display: flex;
+   /* display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.2em;*/
+  }
+  .search-container input {
+    font-size: 1em;
+    padding: 0.6em;
+    border: none;
+    border-bottom: 2px solid #202030;
+  }
+  .search-container button {
+    background-color: #24a584;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 0 1.5em;
+    border-radius: 0.3em;
+    text-align: center;
+    width: 110px;
+    height: 35px;
+
+  }
+  button:hover{
+    background-color: #24a5857c;
+  }
+  .imagenReceta {
+    display: flex;
+    width: 50%;
+    margin: 1em auto 0 auto;
+  }
+  .caracteristicas {
+    background-color: #24a584;
+    position: relative;
+    margin: 0.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.3em;
+  }
+  .caracteristicas h2 {
+    font-size: 1.2em;
+  }
+  .caracteristicas h4 {
+    font-size: 1em; 
+  }
+
+  #recipe {
+    display: inline-block;
+    background-color: #d6f5e6;
+    border: 1px solid #67c495;
+    padding: 1rem;
+    margin: 1rem;
+    font-family: 'Titillium Web', sans-serif;
+    color: #064b2b;
+  }
+  #ingredientes ul { 
+    border: 1px solid #67c495;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.8em 1.1em;
+    padding: 1.2em 0 0 1.2em;
+    margin: 0.5rem;
+  }
+  #ingredientes ul{
+    list-style: none;
+
+  }
+  h3 {
+    text-align: center;
+    margin-top: 1.8em;
+    color: #202030;
+  }
+#flecha {
+    width: 40px;
+    position: fixed;
+    bottom: 3vh;
+    right: 5vh;
+
+  }
+#flecha:hover {
+    filter: saturate(180%);
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+  }
+
+  @media screen and (max-width: 500px) {
+    .container {
+      font-size: 0.9rem;
+    }
+    .imagenReceta {
+      width: 70%;
+      
+    }
+
+  }

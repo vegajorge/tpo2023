@@ -156,7 +156,7 @@ body {
 
 }
 main section {
-    padding: 1rem;
+    padding: 0.5rem;
     
 }
 
@@ -263,8 +263,14 @@ footer p{
         width: 15px;
         height: 15px;
 
+    }
+
+    header{
+        padding-bottom: 0.5rem;
+            
+    }
 }
-}
+
 @media only screen and (max-width: 599px) {
     .contenedor-izq{
         display:none;
@@ -335,5 +341,5 @@ footer p{
     }
     .itemCarrouselTarjeta img {
         height: 70%;
-}
+    }
 }

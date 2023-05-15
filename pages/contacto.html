@@ -43,31 +43,24 @@
                 <li><a class="efecto-boton" href="../index.html"><sapn>Inicio</sapn></a></li>
                 <li><a class="efecto-boton" href="articulo.html">Nutricion</a></li>
                 <li><a class="efecto-boton" href="servicios.html">Servicios</a></li>
-                <li><a class="efecto-boton" href="ventas.html">Ventas</a></li>
+                <li><a class="efecto-boton" href="recetas.html">Recetas</a></li>
                 <li><a class="efecto-boton" href="contacto.html">Contacto</a></li>
             <ul>
         </nav>
     </header>
     <main class="contenedor dos-columnas">
       <article class="contenedor">
-        <h2>Local</h2>
-        <div><span><img class="contacto" src="../img/ubicacion.png" alt="imagen ubicacion">San Martin 123 Barrio Centro - Cordoba Capital</span></div>
-        <div><span><img class="contacto" src="../img/telefonoContacto.png" alt="imagen telefono">351-000001</span> <span><a href="mailto:nutriconsaludable@nutricion.com"><img class="contacto" src="../img/emailContacto.png" alt="imagen email"> nutricionsaludable@nutricion.com </a> </span></div>
-        <div class="ubicacion">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d54484.781398386185!2d-64.22674760024786!3d-31.40589163447545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1snutricion!5e0!3m2!1ses!2sar!4v1682455953110!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </article>
-      <article class="contenedor">
         <h2>Contacto</h2>
-       <form action="" method="post" target="_blank" class="formulario" id="formulario" >
+       <form action="" method="post" class="formulario" id="formulario" >
           <fieldset>
           <br>
           <legend>Datos Personales</legend>
           <div class="formulario__grupo" id="grupo__nombre">
           <label for="nombre">Nombre: </label>
           <span class="formulario__grupo-input">
-          <input size="30" class="formulario__input" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+          <input size="30" class="formulario__input" type="text" name="nombre" id="nombre" autofocus="autofocus" placeholder="Ingrese su nombre" required>
           </span>
-          <p class="formulario__input-error">El nombre solo puede contener letras. </p>
+          <p class="formulario__input-error">Debe ingresar su nombre solo puede contener letras.</p>
         </div>
           <br>
           <div class="formulario__grupo" id="grupo__apellido">
@@ -75,7 +68,7 @@
           <span class="formulario__grupo-input">
           <input size="30" class="formulario__input" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
            </span>
-           <p class="formulario__input-error">El apellido solo puede contener letras. </p>
+           <p class="formulario__input-error">Debe ingresar su apellido solo puede contener letras. </p>
            </div>
          <br>
          <div class="formulario__grupo" id="grupo__domicilio">
@@ -92,28 +85,9 @@
           <span class="formulario__grupo-input">
           <input type="tel" class="formulario__input" name="telefono" id="telefono" placeholder="Ingrese su telefono">
          </span>
-         <p class="formulario__input-error">El telefono solo puede contener numeros. </p>
+         <p class="formulario__input-error">Solo puede contener numeros. </p>
         </div>
           <br>
-
-         <!--   <div class="formulario__grupo" id="grupo__fecha">
-          <label for="fecha">Fecha Nac.: </label>
-          <span class="formulario__grupo-input">
-          <input type="date" class="formulario__input" name="fecha" id="fecha">
-        </span>
-        <p class="formulario__input-error">Seleccione una fecha valida. </p>
-        </div>
-          <br>-->
-
-         <!-- <div class="formulario__grupo" id="grupo__genero">
-          <p class="genero">Genero &nbsp &nbsp
-              <input type="radio"  class="formulario__input"name="genero" id="genero_Hombre" value="hombre" checked="">Hombre
-              <input type="radio" class="formulario__input" name="genero"id="genero_Mujer" value="Mujer">Mujer
-              <input type="radio" class="formulario__input" name="genero" id="genero_Otro"value="Otro"> Otro
-          </p>
-          <p class="formulario__input-error">Seleccione Uno. </p>
-          </div>
-          <br>>-->
           <div class="formulario__grupo" id="grupo__email">
           <label for="email">Email: </label>
           <span class="formulario__grupo-input">
@@ -145,6 +119,13 @@
       <div class="formulario__mensaje" id="formulario__mensaje"><p><b>Error:</b> Por favor rellena el formulario correctamente. </p></div>
      </form>
       </article>
+      <article class="contenedor">
+        <h2>Local</h2>
+        <div><span><img class="contacto" src="../img/ubicacion.png" alt="imagen ubicacion">San Martin 123 Barrio Centro - Cordoba Capital</span></div>
+        <div><span><img class="contacto" src="../img/telefonoContacto.png" alt="imagen telefono">351-000001</span> <span><a href="mailto:nutriconsaludable@nutricion.com"><img class="contacto" src="../img/emailContacto.png" alt="imagen email"> nutricionsaludable@nutricion.com </a> </span></div>
+        <div class="ubicacion">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d54484.781398386185!2d-64.22674760024786!3d-31.40589163447545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1snutricion!5e0!3m2!1ses!2sar!4v1682455953110!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
     </main>
     <a href="#ancla"><img id="flecha" src="../img/flecha-arriba.png" alt="Arriba"></a>
     <script src="../js/validarFormulario.js"></script>

@@ -1,5 +1,6 @@
 .aclaracion{
   font-size: 0.7rem;
+  color: #184630;
 
 }
 .container {
@@ -8,15 +9,11 @@
   padding: 1rem;
   margin: 1rem;
   font-family: 'Titillium Web', sans-serif;
-  color: #000000;
+  /*color: #000000;*/
   
   }
   .search-container {
     width: 100%;
-    /*display: flex;
-   /* display: grid;
-    grid-template-columns: 9fr 3fr;
-    gap: 1.2em;*/
   }
   .search-container input {
     font-size: 1em;
@@ -31,8 +28,8 @@
     font-size: 0.9rem;
     padding: 0 1.5em;
     border-radius: 0.3em;
-    text-align: center;
-    width: 110px;
+    /*text-align: center;
+    width: 80px;*/
     height: 35px;
 
   }

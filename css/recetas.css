@@ -1,7 +1,7 @@
 .aclaracion{
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #184630;
-
+  font-style: italic;
 }
 .container {
   background-color: #d6f5e6;
@@ -9,12 +9,14 @@
   padding: 1rem;
   margin: 1rem;
   font-family: 'Titillium Web', sans-serif;
-  /*color: #000000;*/
   
   }
-  .search-container {
+ /* .search-container {
     width: 100%;
-  }
+    
+  }*/
+
+
   .search-container input {
     font-size: 1em;
     padding: 0.6em;
@@ -28,8 +30,6 @@
     font-size: 0.9rem;
     padding: 0.3em;
     border-radius: 0.3em;
-    /*text-align: center;
-    width: 80px;*/
     height: 35px;
 
   }
@@ -82,19 +82,6 @@
     margin-top: 1.8em;
     color: #202030;
   }
-#flecha {
-    width: 40px;
-    position: fixed;
-    bottom: 3vh;
-    right: 5vh;
-
-  }
-#flecha:hover {
-    filter: saturate(180%);
-    -webkit-transform:scale(1.3);
-    transform:scale(1.3);
-  }
-
   @media screen and (max-width: 500px) {
     .container {
       font-size: 0.9rem;

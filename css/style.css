@@ -75,7 +75,7 @@ nav{
     position: absolute;
     top: 45px;
     left: 22px;
-    filter: saturate(180%);
+    filter: saturate(290%);
 }
 
 .barra-principal{
@@ -301,7 +301,6 @@ footer p{
         top:22px;
         left: 23px;
         width: 9vh;
-          
     }
     .efecto-boton {
         padding: 4px 4px;
@@ -326,7 +325,6 @@ footer p{
         margin-left: 10px;
 
      }
-
     .carrousel span img{
         width: 25px;
         height: 25px;
@@ -354,6 +352,7 @@ footer p{
         border-radius: 20px;
     }
     .itemCarrouselTarjeta img {
-        height: 70%;
+       /* height: 70%;*/
+        height: 100%;
     }
 }

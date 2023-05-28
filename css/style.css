@@ -15,10 +15,29 @@ header {
     #49504b
   );
 }
-.barra-info{
-    background: linear-gradient(90deg, rgba(152, 231, 166, 0.942) 70%, rgba(33, 88, 46, 0.953) 97%);
-    display: flex;
+/* animacion barra redes*/
+.barra-info {
+	-webkit-animation: color-change-2x 10s linear infinite alternate both;
+	 animation: color-change-2x 10s linear infinite alternate both;
+     display: flex;
 }
+@-webkit-keyframes color-change-2x {
+    60% {
+        background: rgba(152, 231, 166, 0.942);
+      }
+      90% {
+        background: rgba(33, 88, 46, 0.953);
+      }
+  }
+  @keyframes color-change-2x {
+    60% {
+      background: rgba(152, 231, 166, 0.942);
+    }
+    90% {
+      background: rgba(33, 88, 46, 0.953);
+    }
+  }
+ 
 .contenedor-izq{
     display: inline-flex;
     justify-content: flex-start;
@@ -248,10 +267,8 @@ footer p{
 #flecha:hover {
     filter: saturate(180%);
     -webkit-transform:scale(1.3);
-    transform:scale(1.3);
-    
+    transform:scale(1.3);   
 }
-
 
 @media only screen and (max-width: 455px) {
     main section{
@@ -276,12 +293,10 @@ footer p{
         top: 25px;
         width: 15px;
         height: 15px;
-
     }
 
     header{
-        padding-bottom: 0.5rem;
-            
+        padding-bottom: 0.5rem;      
     }
 }
 
@@ -352,7 +367,6 @@ footer p{
         border-radius: 20px;
     }
     .itemCarrouselTarjeta img {
-       /* height: 70%;*/
         height: 100%;
     }
 }
